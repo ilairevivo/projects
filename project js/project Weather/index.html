@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container-animation">
+            <div class="cloud front">
+                <span class="left-front"></span>
+                <span class="right-front"></span>
+            </div>
+            <span class="sun sunshine"></span>
+            <span class="sun"></span>
+            <div class="cloud back">
+                <span class="left-back"></span>
+                <span class="right-back"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-control">
+                <label for="inputCity">חיפוש</label>
+                <br>
+                <input type="text" id="inputCity" />
+                <button>SEND</button>
+            </div>
+
+            <div class="weatherInfo">
+                <h1 id="city"></h1>
+                <p id="temp"></p>
+                <img id="weatherIcon" />
+                <p id="description"></p>
+                <p id="errorMessage"></p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

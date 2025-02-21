@@ -1,0 +1,126 @@
+ body {
+     font-family: Arial, sans-serif;
+     text-align: center;
+     background-image: url(../../img/baeckgrapnd\ of\ create\ Elements.jpg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+
+
+ }
+
+ .GeneralArea {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ @media(max-width: 680px) {
+     .GeneralArea {
+         flex-direction: column;
+     }
+
+     .container {
+         width: 400px !important;
+     }
+
+     .output {
+         width: 100% !important;
+         margin: 0 !important;
+     }
+ }
+
+ .container {
+     max-width: 640px;
+     height: 700px;
+     width: 21%;
+     background-image: linear-gradient(to right, rgba(239, 236, 236, 0), rgb(255, 255, 255));
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0px 0px 10px rgb(92, 92, 92);
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ input,
+ select,
+ button {
+     width: 80%;
+     padding: 10px;
+     height: 5%;
+     margin-bottom: 10px;
+     border: 1px solid #000000;
+     border-radius: 10px;
+     background-color: #fdf57fba;
+ }
+
+ .buttons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     button {
+         margin: 10px;
+     }
+ }
+
+ #textColor,
+ #bgColor {
+     width: 85%;
+     height: 60px;
+
+ }
+
+ button {
+     background-color: #ff1100;
+     color: rgb(52, 23, 23);
+     font-size: small;
+     border: 1px;
+     cursor: pointer;
+     box-shadow: #000000 5px 0px 30px;
+     animation: growShrink 3s infinite;
+ }
+
+ @keyframes growShrink {
+     0% {
+         transform: scale(1);
+         background-color: red;
+     }
+
+     50% {
+         transform: scale(0.9);
+         background-color: rgb(255, 111, 0);
+
+     }
+
+     100% {
+         transform: scale(1);
+         background-color: red;
+
+     }
+ }
+
+ button:hover {
+     background-color: #000000;
+
+ }
+
+ .output {
+     border: 1px solid #000000;
+     padding: 10px;
+     background: #fff;
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px rgb(0, 0, 0);
+     width: 65%;
+     height: 600px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     margin: auto;
+ }

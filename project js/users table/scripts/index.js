@@ -1,0 +1,1 @@
+import { registerForm, loginForm ,drawTableRows } from "./domService.js";

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Mangement</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/index.js" type="module" defer></script>
+</head>
+
+<body dir="rtl">
+    <div class="container">
+        <div class="container-register">
+            <h1>הרשמה</h1>
+            <form class="register-form">
+                <div class="form-control">
+                    <label for="firstName">שם פרטי</label>
+                    <input type="text" name="firstName" id="firstName" class="input" />
+                </div>
+                <div class="form-control">
+                    <label for="lastName">שם משפחה</label>
+                    <input type="text" name="lastName" id="lastName" class="input" />
+                </div>
+                <div class="form-control">
+                    <label for="register-email">אימייל</label>
+                    <input type="email" name="email" id="register-email" class="input" />
+                </div>
+                <div class="form-control">
+                    <label for="register-password">סיסמא</label>
+                    <input type="password" name="password" id="register-password" class="input" />
+                </div>
+                <input type="submit" id="submit"></input>
+            </form>
+        </div>
+
+        <div class="container-login">
+            <h1>התחברות</h1>
+            <form class="login-form">
+                <div class="form-control">
+                    <label for="login-email">אימייל</label>
+                    <input type="email" name="email" id="login-email" class="input" />
+                </div>
+                <div class="form-control">
+                    <label for="login-password">סיסמא</label>
+                    <input type="password" name="password" id="login-password" class="input" />
+                </div>
+                <button type="submit" id="submit">התחבר</button>
+            </form>
+        </div>
+
+        <div class="container-users">
+            <h2>משתמשים</h2>
+
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>שם פרטי</th>
+                        <th>שם משפחה</th>
+                        <th>אימייל</th>
+                        <th>סיסמא</th>
+                        <th>סטטוס</th>
+                        <th>פעולות</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table-body">
+                    <!-- content from js -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>בונה מסכים</title>
+</head>
+
+<body>
+    <div class="GeneralArea">
+        <div class="container">
+            <h1>בונה מסכים</h1>
+            <label for="element-select">בחר אלמנט:</label>
+            <select id="element-select">
+                <option value="p">פסקה </option>
+                <option value="a">קישור</option>
+                <option value="li">פריט ברשימה </option>
+                <option value="img">תמונה</option>
+                <option value="div">Div </option>
+                <option value="h1">כותרת 1</option>
+                <option value="h2">כותרת 2</option>
+            </select>
+
+            <div class="inputs">
+                <label for="content">הזן תוכן</label>
+                <input type="text" id="content" placeholder="הזן תוכן כאן">
+
+                <label for="width">הזן רוחב</label>
+                <input type="text" id="width" placeholder="רוחב">
+
+                <label for="height">הזן גובה</label>
+                <input type="text" id="height" placeholder="גובה">
+
+                <label for="bgColor">בחר צבע רקע</label>
+                <input type="color" id="bgColor">
+
+                <label for="textColor">בחר צבע טקסט</label>
+                <input type="color" id="textColor">
+
+                <label for="fontSize">הזן גודל טקסט</label>
+                <input type="number" id="fontSize" placeholder="גודל טקסט">
+            </div>
+            <div class="buttons">
+                <button id="addElement" class="add">הוסף אלמנט</button>
+                <button id="removeElement">מחק אלמנט אחרון</button>
+            </div>
+            <button id="ShadowClick">הוסף צל לאלמנט</button>
+        </div>
+
+        <div id="output" class="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

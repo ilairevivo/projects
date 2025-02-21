@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <title>משחק טריוויה</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- קונטיינר היסטוריית ניקוד -->
+    <div class="history-container">
+        <div class="history-title">היסטוריית ניקוד</div>
+        <div class="score-history" id="score-history"></div>
+    </div>
+
+    <div class="game-container">
+        <h1>טריוויה כללית</h1>
+        <div class="score-board">ניקוד: <span id="score">0</span></div>
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+        <div class="feedback" id="feedback"></div>
+        <button class="next-btn" id="next-btn" style="display: none;">השאלה הבאה</button>
+    </div>
+</body>
+</html>

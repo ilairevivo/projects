@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient($color2, $color3) $width no-repeat;
+}
+
+//כל האלמנתים
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//colors
+$color1: #ffffff;
+$color2: #281EFF;
+$color3: #2DFF8C;
+$color4: #f6f6f658;
+$color5: #011560;
+
+//width
+$width: 100%;
+
+
+
+.container-form {
+    width: $width;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 70px;
+}
+
+h1 {
+    text-align: center;
+    width: $width;
+    color: $color1;
+    font: normal normal normal 200px/200px Satisfy;
+    text-shadow: 0px 0px 36px #00000087;
+}
+
+h2 {
+    font: normal normal normal 32px/38px Varela Round;
+    color: $color1;
+    width: $width;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    color: $color1;
+}
+
+form {
+    display: flex;
+    width: $width;
+    gap: 150px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.form-control {
+    width: 30%;
+    text-align: right;
+
+}
+
+.form-control>label {
+    color: $color1;
+    width: 24px;
+    height: 20px;
+    text-align: right;
+    font: normal normal normal 16px/20px Varela Round;
+}
+
+.form-control>input {
+    background-color: #f6f6f658;
+    width: 418px;
+    height: 50px;
+    border: 2px solid $color1;
+
+
+
+}
+
+button {
+
+    color: #1C1C1C;
+    width: 200px;
+    height: 50px;
+    background: $color1 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    font: normal normal normal 16px/20px Varela Round;
+}
+
+button:hover {
+    transform: scale(0.9);
+    color: $color;
+    background-color: #011560;
+}
+
+@media(max-width:780px) {
+    .container-form {
+        width: $width;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 20px;
+        padding-top: 25px;
+
+    }
+
+    h1 {
+        top: 90px;
+        left: 21px;
+        width: 328px;
+        height: 93px;
+        text-align: center;
+        font: normal normal normal 60px/86px Satisfy;
+    }
+
+    h2 {
+        top: 203px;
+        left: 36px;
+        width: 298px;
+        height: 22px;
+        font: normal normal normal 18px/22px Varela Round;
+        color: $color4;
+    }
+
+    p {
+        top: 245px;
+        left: 31px;
+        width: 318px;
+        height: 120px;
+        font: normal normal normal 16px/20px Varela Round;
+        color: $color1;
+    }
+
+
+    form {
+
+        margin: 0;
+        padding: 0;
+        width: 301.55px;
+        height: 168.57px;
+        background-size: contain;
+
+
+    }
+
+    .form-control {
+        width: $width;
+        background-size: $width;
+        margin: auto;
+        flex-flow: column;
+
+
+
+
+
+
+    }
+
+    .form-control>label {
+        top: 388px;
+        left: 322px;
+        width: 16px;
+        height: 13px;
+        text-align: right;
+        font: normal normal normal 11px/13px Varela Round;
+        color: #F9F9F9;
+    }
+
+
+    .form-control>input {
+        width: 302px;
+        height: 36px;
+        background: #F6F6F624 0% 0% no-repeat padding-box;
+        border: 2px solid $color1;
+    }
+
+    form>button {
+        color: #2823FD;
+        margin-bottom: 20px;
+        width: $width;
+    }
+}

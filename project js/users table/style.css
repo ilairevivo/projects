@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../../img/backgraond\ of\ users\ table.jpg);
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 90px;
+    height: 90vh;
+    background-color: #f1f1f16c;
+    border-radius: 25px;
+}
+
+.register-form,
+.login-form {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+#users-table {
+    width: 80%;
+
+    thead {
+        background-color: #999797;
+    }
+}
+
+#users-table th {
+    padding: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 76px;
+    color: #025a02;
+    text-align: center;
+
+}
+
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #025a02;
+    text-align: center;
+}
+
+tbody {
+    text-align: center;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px;
+    width: 72%;
+    border-bottom: #025a02 5px solid;
+}
+
+#submit {
+    padding: 10px;
+    margin-top: 25px;
+    width: 10%;
+    color: white;
+    border-color: #01fc01;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: infinite-spinning 10s infinite;
+
+}
+
+.btn{
+    margin: auto;
+    width: 300px !important;
+    margin: 20px !important;
+
+}
+
+
+
+
+.inputDOM{
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border-bottom: #025a02 5px solid;
+}
+@keyframes infinite-spinning {
+    0% {
+        background-color: #025a02;
+    }
+
+    25% {
+        background-color: #039203;
+    }
+
+    50% {
+        background-color: #01fc01;
+    }
+
+    75% {
+        background-color: #039203;
+    }
+
+    100% {
+        background-color: #025a02;
+    }
+}
+
+#submit:hover {
+    background-color: #01fc01;
+    color: #025a02;
+    transform: scale(0.9);
+    border: #025a02 3px solid;
+}
+
+.container-users,
+#uers-table-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    width: 27%;
+    background-color: #025a02;
+    color: white;
+    border-color: #01fc01;
+    border-radius: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: infinite-spinning 10s infinite;
+}
+
+button:hover {
+    background-color: #01fc01;
+    color: #025a02;
+}
+
+label {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    color: #026f02;
+    font-weight: 400;
+}
+
+table {
+    border: #000000 3px solid;
+}

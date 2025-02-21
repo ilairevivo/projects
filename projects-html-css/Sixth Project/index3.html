@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תן לנו להוביל...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .img {
+            background-image: url(Path\ 15@2x.png);
+            background-repeat: no-repeat;
+            background-size: 100% 470px;
+            width: 100%;
+            height: 600px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #D3E10E;
+            font: normal normal bold 86px/113px Assistant;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        p {
+            text-align: center;
+            font: normal normal normal 20px/26px Assistant;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+        }
+
+        .form {
+            display: flex;
+            width: 100%;
+            gap: 150px;
+            padding-top: 10px;
+
+        }
+
+        .form-control {
+            width: 30%;
+            text-align: right;
+
+        }
+
+        .form-control>label {
+            color: #011560;
+            width: 38px;
+            height: 21px;
+            text-align: right;
+            font: normal normal bold 16px/21px Assistant;
+        }
+
+        .form-control>input {
+            background-color: #F6F6F6;
+            width: 418px;
+            height: 50px;
+            border: none;
+            border-bottom: 4px solid #020253;
+
+
+        }
+
+        .form>button {
+            font-size: medium;
+            color: #011560;
+            width: 156px;
+            height: 50px;
+            background: #D3E10E 0% 0% no-repeat padding-box;
+            font: normal normal bold 22px/30px Assistant;
+            border-radius: 20px;
+            margin: 30px;
+            padding-left: 15px;
+        }
+
+        @media(max-width:700px) {
+            .img {
+                background-size: 100% 450px;
+                width: 100%;
+                height: 500px;
+            }
+
+            h1 {
+
+                font: normal normal bold 66px/83px Assistant;
+                padding-top: 50px;
+            }
+
+            p {
+                width: 50%;
+                margin: auto;
+                padding: 0;
+            }
+
+            .form {
+
+                width: 60%;
+                height: 500px;
+
+                padding: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 0;
+                margin: 0;
+                padding: 0;
+                margin: auto;
+
+            }
+
+            .form-control {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                flex-flow: column;
+
+
+
+
+
+            }
+
+
+            .form-control>input {
+                background-color: #F6F6F6;
+                width: 100%;
+                height: 50px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                border-bottom: 4px solid #020253;
+
+
+
+
+
+            }
+
+            .form>button {
+
+                color: #011560;
+                width: 100%;
+                height: 50px;
+                background: #D3E10E 0% 0% no-repeat padding-box;
+                font: normal normal bold 22px/30px Assistant;
+                border-radius: 0px;
+                margin: 0;
+            }
+        }
+
+        button:hover {
+            transform: scale(0.9);
+            color: #D3E10E;
+            background-color: #011560;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="img">
+        <h1>תן לנו להוביל אותך</h1>
+        <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+    </div>
+
+    <form class="form container">
+        <button type="submit">שליחה</button>
+        <div class="form-control">
+            <label for="name">שם מלא</label>
+            <input type="text" id="name" required />
+        </div>
+        <div class="form-control ">
+            <label for="email">דוא"ל</label>
+            <input type="email" id="email" required />
+        </div>
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

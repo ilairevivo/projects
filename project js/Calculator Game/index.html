@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק מחשבון</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>משחק מחשבון</h1>
+      
+        <label for="difficulty">בחר רמת קושי:</label>
+        <select id="difficulty" >
+            <option value="easy"> קל 😮‍💨</option>
+           <option value="medium"> בינוני 🤔</option>
+            <option value="hard">קשה 😰</option>
+        </select>
+        <button id="start">התחל משחק</button>
+
+        <div id="quiz" class="hidden">
+            <h2 id="question"></h2>
+            <input type="number" id="answer" placeholder="תשובה">
+            <button id="submit">שלח תשובה</button>
+            <div id="feedback"></div>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>תוצאות:</h2>
+            <p id="score"></p>
+            <h3>תוצאות קודמות:</h3>
+            <p id="history"></p>
+            <button id="restart">שחק שוב</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

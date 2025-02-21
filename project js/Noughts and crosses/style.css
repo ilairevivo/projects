@@ -1,0 +1,190 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   body {
+       font-family: 'Segoe UI', Tahoma, sans-serif;
+       min-height: 100vh;
+       background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 20px;
+       color: white;
+       text-align: center;
+   }
+
+   h1 {
+       font-size: 4rem;
+       margin-bottom: 2rem;
+       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+       animation: fadeInDown 1s ease-out;
+       color: rgba(203, 242, 6, 0.882);
+   }
+
+   .game-container {
+       background: rgba(255, 255, 255, 0.1);
+       padding: 2rem;
+       border-radius: 20px;
+       backdrop-filter: blur(10px);
+       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+       animation: fadeIn 1s ease-out;
+   }
+
+   .status {
+       font-size: 1.5rem;
+       margin: 1rem 0;
+       padding: 0.5rem;
+       border-radius: 10px;
+       background: rgba(255, 255, 255, 0.15);
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+       transition: all 0.3s ease;
+   }
+
+   .board {
+       display: grid;
+       grid-template-columns: repeat(3, 120px);
+       gap: 10px;
+       margin: 2rem 0;
+   }
+
+   .cell {
+       width: 120px;
+       height: 120px;
+       background: rgba(255, 255, 255, 0.1);
+       border: none;
+       border-radius: 15px;
+       font-size: 3rem;
+       color: white;
+       cursor: pointer;
+       transition: all 0.3s ease;
+       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .cell:hover {
+       background: rgba(255, 255, 255, 0.2);
+       transform: translateY(-5px);
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   }
+
+   .cell:active {
+       transform: translateY(0);
+   }
+
+   .cell.X {
+       color: #FFD700;
+       animation: popIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   }
+
+   .cell.O {
+       color: #00FF87;
+       animation: popIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   }
+
+   .restart {
+       font-size: 1.2rem;
+       padding: 1rem 2rem;
+       border: none;
+       border-radius: 50px;
+       background: rgba(255, 255, 255, 0.2);
+       color: white;
+       cursor: pointer;
+       transition: all 0.3s ease;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       margin-top: 1rem;
+   }
+
+   .restart:hover {
+       background: rgba(255, 255, 255, 0.3);
+       transform: translateY(-3px);
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   }
+
+   .restart:active {
+       transform: translateY(0);
+   }
+
+   .winner {
+       animation: pulse 1.5s infinite;
+       color: #FFD700;
+       font-weight: bold;
+   }
+
+   @keyframes fadeIn {
+       from {
+           opacity: 0;
+           transform: translateY(20px);
+       }
+
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+   @keyframes fadeInDown {
+       from {
+           opacity: 0;
+           transform: translateY(-50px);
+       }
+
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+   @keyframes popIn {
+       0% {
+           transform: scale(0.5);
+           opacity: 0;
+       }
+
+       80% {
+           transform: scale(1.1);
+       }
+
+       100% {
+           transform: scale(1);
+           opacity: 1;
+       }
+   }
+
+   @keyframes pulse {
+       0% {
+           transform: scale(1);
+       }
+
+       50% {
+           transform: scale(1.05);
+       }
+
+       100% {
+           transform: scale(1);
+       }
+   }
+
+   /* רספונסיביות */
+   @media (max-width: 600px) {
+       .board {
+           grid-template-columns: repeat(3, 90px);
+           gap: 5px;
+       }
+
+       .cell {
+           width: 90px;
+           height: 90px;
+           font-size: 2rem;
+       }
+
+       h1 {
+           font-size: 2rem;
+       }
+   }

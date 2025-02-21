@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url(./../../img/beackgraond\ of\ game\ natemtic.jpg);
+        background-size: cover;
+        /* זה יגרום לתמונה לכסות את כל הרקע */
+        background-repeat: no-repeat;
+        /* זה ימנע חזרה של התמונה */
+    
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: #218837a8;
+    border-radius: 25px;
+    padding-top: 20px;
+    margin-top: 50px;
+    box-shadow:inset #01fd3c 5px 0px 100px;
+    transition: box-shadow 0.5s ease-in-out;
+        
+}
+#question {
+    font: normal normal 900 33px/53px Heebo;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px;
+    border: #000 solid 2px;
+    color: #06068b;
+    box-shadow: #00ff3c 5px 0px 30px;
+    animation: growShrink 3s infinite;
+}
+
+button:hover {
+    background-color: #06068b;
+    color: white;
+    transition: all;
+    transform: scale(0.9);
+}
+
+.hidden {
+    display: none;
+}
+
+h1,h2 {
+font: normal normal 900 53px/73px Heebo;
+    color: #06068b;
+    text-shadow: #000000 20px 0px 50px;
+}
+
+label{
+    margin: 15px;
+    color: #000;
+    text-align: center;
+    font: normal normal 900 23px/43px Heebo;
+    
+}
+
+input{
+    margin: 15px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: #00ff3c 5px 0px 30px;
+
+}
+
+select{
+    margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 15px;
+        border: #000 solid 2px;
+        text-align: center;
+        color: #06068b;
+        box-shadow: #00ff3c 5px 0px 30px;
+}
+
+select:hover{
+    background-color: #06068b;
+    color: #ffffff;
+}
+
+/* הגדרת אנימציה */
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+        background-color: #00831e;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: #00ff22;
+
+    }
+
+    100% {
+        transform: scale(1);
+  
+    }
+}
+ @keyframes shadowAnimation {
+     0% {
+         box-shadow:inset 0px 0px 10px rgba(17, 255, 0, 0.5);
+     }
+
+     50% {
+         box-shadow:inset 10px 10px 30px rgba(0, 129, 9, 0.7);
+     }
+
+     100% {
+         box-shadow:inset 0px 0px 10px rgba(34, 255, 0, 0.5);
+     }
+ }
+ .container:hover {
+     animation: shadowAnimation 1s infinite;
+ }
