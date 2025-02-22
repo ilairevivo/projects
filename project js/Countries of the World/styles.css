@@ -21,14 +21,46 @@
     text-align: center;
 }
 
-#inputLike{
-    margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 20px;
-        width: 170px;
-        height: 40px;
+@media (max-width: 868px) {
+    #search {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
         text-align: center;
+
+    }
+
+    #search-input {
+        width: 100%;
+        margin: 20px 0 0px 0;
+    }
+
+    #inputLike {
+        width: 100% !important;
+        margin: 20px 0px 0px 0px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #showAll {
+        width: 100% !important;
+        margin: 20px 0px 70px 0px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+#inputLike {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+}
+
 #showAll {
     margin-top: 50px;
     margin-bottom: 50px;

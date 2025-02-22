@@ -212,3 +212,43 @@ button:hover{
 .row.justify-content-center {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 80% !important;
+    }
+    h1{
+        font-size: 50px !important;
+    }
+    #title3{
+        font-size: 15px !important;
+    }
+    h2{
+        font-size: 29px !important;
+    }
+    #search-input {
+        width: 80%;
+        margin: 15px auto;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    #inputLike {
+        width: 80%;
+        margin: 15px auto;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    #showAll {
+        width: 80%;
+        margin: 15px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #search{
+        width: 80%;
+        flex-direction: column !important;
+    }
+}

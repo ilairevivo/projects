@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // מאגר נתונים גלובלי
+    
     let allCountries = [];
     let filteredCountries = [];
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // פונקציה ליצירת כרטיס מדינה
+   
     function createCountryCard(country) {
         const card = document.createElement('div');
         card.className = 'country-card';
@@ -94,10 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // עדכון ראשוני
         timeElement.textContent = getLocalTime();
 
-        // עדכון כל שנייה
         return setInterval(() => {
             timeElement.textContent = getLocalTime();
         }, 1000);
@@ -105,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // פונקציה להצגת כל הכרטיסים
     function renderCountries() {
-        // ניקוי הקונטיינר
         countriesContainer.innerHTML = '';
 
         if (filteredCountries.length === 0) {
@@ -126,13 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // ניקוי אינטרוולים
         window.addEventListener('beforeunload', () => {
             intervals.forEach(interval => clearInterval(interval));
         });
     }
 
-    // חיפוש מדינות
     function handleSearch(searchTerm) {
         filteredCountries = allCountries.filter(country =>
             country.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -140,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCountries();
     }
 
-    // הוספת דיבאונס לחיפוש
     function debounce(func, wait) {
         let timeout;
         return function executedFunction(...args) {
@@ -153,16 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    // אתחול האפליקציה
     function initApp() {
-        // הוספת מאזין לשדה החיפוש עם דיבאונס
         const debouncedSearch = debounce(handleSearch, 300);
         searchInput.addEventListener('input', (e) => debouncedSearch(e.target.value));
 
-        // טעינת המדינות
         fetchCountries();
     }
 
-    // הפעלת האפליקציה
     initApp();
 });

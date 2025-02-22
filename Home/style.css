@@ -1,6 +1,7 @@
    body {
        background: linear-gradient(#281EFF, #2DFF8C) 100% no-repeat;
        background-attachment: fixed;
+       background-size: 100% 100vh;
    }
 
 
@@ -9,7 +10,8 @@
        background-color: #ffffff;
        margin-top: -40px !important;
    }
-   .logo-img-OOP{
+
+   .logo-img-OOP {
        width: 60px;
        height: 60px;
        margin: auto 0px !important;
@@ -49,7 +51,7 @@
    }
 
    /* From Uiverse.io by satyamchaudharydev */
-  #btn-backToTop {
+   #btn-backToTop {
        width: 140px;
        height: 40px;
        margin-top: 680px;
@@ -58,13 +60,13 @@
        border: none;
        position: relative;
        background-color: #08fbe3 !important;
-       padding-bottom: 2em ;
+       padding-bottom: 2em;
        cursor: pointer;
-        z-index: 9999;
-        border-radius: 1px solid #000;
-        position: fixed;
-        cursor: pointer;
-        
+       z-index: 9999;
+       border-radius: 1px solid #000;
+       position: fixed;
+       cursor: pointer;
+
    }
 
    #btn-backToTop>div,
@@ -231,7 +233,7 @@
        padding: 30px;
        border-radius: 20px;
        text-align: center;
-       
+
    }
 
    .demo1:hover {
@@ -239,6 +241,7 @@
        transition: all 0.3s ease;
        border: #000000 solid 1px;
    }
+
    .logo {
        width: 100%;
        height: 100px;
@@ -304,7 +307,8 @@
            margin-top: 0px !important;
            margin: auto 0px !important;
        }
-       .logo-img-OOP{
+
+       .logo-img-OOP {
            width: 40px !important;
            height: 40px !important;
            margin: auto 0px !important;
@@ -315,6 +319,12 @@
            font-weight: 500;
            position: relative;
            transition: color 0.3s ease;
+       }
+
+       .container-logos {
+           margin-top: 0px !important;
+           height: 150px;
+
        }
    }
 
@@ -412,10 +422,10 @@
    .demo2 {
 
        width: 100%;
-       height: 500px;
+       height: 400px !important;
        background-image: url(../img/Acer_Wallpaper_05_3840x2400.jpg);
        background-repeat: no-repeat;
-       background-size: 100%;
+       background-size: 100% 100%;
        background-position: center center;
 
        h1 {
@@ -460,6 +470,7 @@
        background-position: center center;
 
    }
+
 
    .logo-foter {
        width: 100%;
@@ -513,6 +524,10 @@
 
 
        }
+
+       .back-to-top {
+           display: none;
+       }
    }
 
    #img-logo-foter1 {
@@ -530,9 +545,9 @@
        background-image: url(../img/logo\ foter\ 6.jpg);
        background-repeat: no-repeat;
        background-position: center center;
-       width: 45px;
-       height: 60px;
-       display: inline-block;
+       width: 45px !important;
+       height: 60px !important;
+       display: inline-block !important;
 
 
    }
@@ -624,50 +639,51 @@
        margin-bottom: -20px;
    }
 
-   
 
-@keyframes blob-bounce {
-  0% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
-  }
 
-  25% {
-    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-  }
+   @keyframes blob-bounce {
+       0% {
+           transform: translate(-100%, -100%) translate3d(0, 0, 0);
+       }
 
-  50% {
-    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-  }
+       25% {
+           transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+       }
 
-  75% {
-    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-  }
+       50% {
+           transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+       }
 
-  100% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
-  }
-}
+       75% {
+           transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+       }
 
-::-webkit-scrollbar {
-    width: 16px;
-}
+       100% {
+           transform: translate(-100%, -100%) translate3d(0, 0, 0);
+       }
+   }
 
-/* הרקע של סרגל הגלילה */
-::-webkit-scrollbar-track {
-    background: #00ff95;
-    
-}
+   ::-webkit-scrollbar {
+       width: 16px;
+   }
 
-/* הכפתור עצמו של סרגל הגלילה */
-::-webkit-scrollbar-thumb {
-    background: #0800ff;
-    border-radius: 15px;
-    height: 30px !important;
-}
+   /* הרקע של סרגל הגלילה */
+   ::-webkit-scrollbar-track {
+       background: #00ff95;
 
-/* כשעוברים עם העכבר מעל הכפתור */
-::-webkit-scrollbar-thumb:hover {
-    background: #012193;
-    transform: scale(0.9); ;
-   
-}
+   }
+
+   /* הכפתור עצמו של סרגל הגלילה */
+   ::-webkit-scrollbar-thumb {
+       background: #0800ff;
+       border-radius: 15px;
+       height: 30px !important;
+   }
+
+   /* כשעוברים עם העכבר מעל הכפתור */
+   ::-webkit-scrollbar-thumb:hover {
+       background: #012193;
+       transform: scale(0.9);
+       ;
+
+   }
