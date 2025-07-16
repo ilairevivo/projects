@@ -16,7 +16,7 @@
 
    .container-logos {
        background-color: #ffffff;
-       margin-top: -40px !important;
+       
    }
 
    .logo-img-OOP {
@@ -58,7 +58,6 @@
        left: 0;
    }
 
-   /* From Uiverse.io by satyamchaudharydev */
    #btn-backToTop {
        width: 140px;
        height: 40px;
@@ -143,7 +142,6 @@
        transition-delay: 0.3s;
    }
 
-   /* icon style and hover */
    #btn-backToTop svg {
        width: 20px;
        right: 0;
